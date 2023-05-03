@@ -1,0 +1,30 @@
+body{
+    background-color: #DFC2A3;
+    color: #705f55;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+h1,h3{
+    color:#705f55;
+}
+a{
+    color: #C97878;
+}
+.SpanClass1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c5f42;
+}
+/* .imagebox{
+    text-align: center;
+} */
+img{
+    margin-right: 150px;;
+}
+.pclass1{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size:smaller
+}
