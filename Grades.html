@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GradesStyle.css">
+    <title>Retrieve Grade</title>
+</head>
+
+<body>
+    <form action="https://mumstudents.org/params.php" method="get">
+        <div class="Header">
+            <h1>Retrieve Your Grade</h1>
+        </div>
+        <div class="Group1">
+            <label>Student Name: </label>
+            <br>
+            <input type="text" name="txtBoxStdName" required />
+            <br>
+            <label>Student Id: </label>
+            <br>
+            <input type="text" name="txtBoxStdId" required />
+            <br>
+            <br>
+            <label>Assignment:</label>
+            <br>
+            <select>
+                <option selected>Lab00</option>
+                <option>Lab01</option>
+                <option>Lab02</option>
+                <option>Lab03</option>
+                <option>Lab04</option>
+                <option>Lab05</option>
+                <option>Lab06</option>
+                <option>Lab07</option>
+                <option>Lab08</option>
+                <option>Lab09</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>What is Your Entry?</legend>
+                <input type="checkbox" name="StudentEntry" value="January">January
+                <input type="checkbox" name="StudentEntry" value="May">May
+                <input type="checkbox" name="StudentEntry" value="August">August
+                <input type="checkbox" name="StudentEntry" value="November">November
+            </fieldset>
+        </div>
+
+        <br>
+        <div class="Confiramtion">
+            <label>I admit that above information belongs to me</label><input type="checkbox" name="ConfirmCheckbox"
+                required />
+        </div>
+        <br>
+        <input id="btnSubmit" type="submit" name="BtnSubmit" />
+
+    </form>
+</body>
+
+</html>

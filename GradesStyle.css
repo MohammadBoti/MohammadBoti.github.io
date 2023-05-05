@@ -1,0 +1,92 @@
+body {
+    background-color: #b3e5fc;
+}
+
+form {
+    background-color: #fbfeff;
+    margin-top: 10%;
+    margin-left: 28%;
+    margin-right: 28%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.Header {
+    background-color: #00b0ff;
+    color: #fbfeff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    width: 330px;
+    padding: 14px 0 10px 49px;
+    letter-spacing: 1px;
+    margin-left: -50px;
+}
+
+#btnSubmit {
+    margin-top: 15px;
+    margin-left: 30px;
+    text-align: center;
+    width: 30%;
+    height: 35px;
+    background-color: #00b0ff;
+    color: #fbfeff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border: 1px solid #00b0ff;
+}
+
+#btnSubmit:hover {
+    background-color: #075cca;
+    color: #c5d4db;
+}
+
+.Group1 {
+    margin-top: 3%;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+input[type=text] {
+    border: none;
+    margin-top: 5px;
+    border-bottom: 1px solid #c5d4db;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    width: 390px;
+    height: 35px;
+}
+
+input:focus {
+    background-color: #c5d4db;
+}
+
+select {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-color: #c5d4db;
+    width: 390px;
+    height: 30px;
+}
+
+fieldset {
+    font-size: 12px;
+    border-color: #c5d4db;
+    width: 368px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+legend {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.Confiramtion {
+    margin-top: 15px;
+    margin-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
