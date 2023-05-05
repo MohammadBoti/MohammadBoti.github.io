@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript"
+    src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=J1xFTfbtIJhVEK1g3ZdjLUGoRReOOKg3TyWP_Pf4FAvnyJ4NROip9_Ctv65yOgEcC9K42x2iWa3bKH4GevOUnIcOzVl69DnLPueR8Oew7TIrSqKXgtWZygapFKu5cpyo"
+    charset="UTF-8"></script>
+<script>
+    function calcTip() {
+        let subTotal = parseInt(document.getElementById("subtotal").value);
+        let tip = parseInt(document.getElementById("tip").value);
+        let totalAmount = subTotal + (tip / 100) * subTotal;
+        document.getElementById("total").innerHTML = "$" + totalAmount;
+    }
+
+</script>
+
+<head>
+    <title>Tip Calculator</title>
+    <link href="TipsStyle.css" type="text/css" rel="stylesheet" />
+    <!-- <script src="tip.js" type="text/javascript"></script> -->
+</head>
+
+
+<body>
+    <h1>
+        <img id="logo" src="https://mumstudents.org/cs472/2023-05-BL/labs/tip_calculator/calc.jpg" alt="++--**//" />
+        Tip Calculator
+    </h1>
+
+    <div>
+        <label><input id="subtotal" type="text" /> $ Subtotal</label>
+    </div>
+
+    <div>
+        <label><input id="tip" type="text" /> % Tip</label>
+    </div>
+
+    <div>
+        <button id="btn" onclick="calcTip();">Calculate Tip</button>
+    </div>
+
+    <hr />
+
+    <div>
+        <h2>Your total:</h2>
+        <p id="total">$0.00</p>
+    </div>
+</body>
+
+</html>
