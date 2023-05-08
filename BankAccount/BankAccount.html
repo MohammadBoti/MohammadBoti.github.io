@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank Account Creation</title>
+    <link rel="stylesheet" type="text/css" href="../BankAccount/BankAccount.css">
+  </head>
+  <body>
+    <h1>Create Bank Account</h1>
+    <label for="nameInput">Account Name:</label>
+    <input type="text" id="nameInput" /><br />
+    <label for="depositInput">Deposit:</label>
+    <input type="number" id="depositInput" /><br />
+    <button onclick="AccountManager.createAccount()">Create Account</button><br /><br/>
+    <textarea id="accountListTextArea" rows="10" cols="30"></textarea>
+
+    <div id="transactionPage" class="transaction-page">
+      <h2>Transaction</h2>
+      <label for="accountDropdown">Select Account:</label>
+      <select id="accountDropdown"></select><br />
+      <label for="amountInput">Amount:</label>
+      <input type="number" id="amountInput" /><br />
+      <button id="submitButton" onclick="AccountManager.handleTransaction()">Submit</button>
+    </div>
+
+    <button onclick="AccountManager.showTransactionPage('deposit')">Deposit</button>
+    <button onclick="AccountManager.showTransactionPage('debit')">Debit</button>
+
+    <script src="../BankAccount/BankAccount.js"></script>
+  </body>
+</html>
+
