@@ -1,9 +1,6 @@
-window.onload = function() {
-    var button = document.getElementById("btn");
-    button.onclick = myAlert;
-    var check = document.getElementById("check");
-    check.onchange = setNewStyle;
-}
+
+initJsFile()
+
 function myAlert(){
     setInterval(increaseFontSize, 500);
 }
@@ -27,4 +24,11 @@ function setNewStyle(){
     } else {
         document.getElementById("text").style.fontWeight="400";
     }
+}
+
+function initJsFile(){
+    const button = document.getElementById("btn");
+    button.onclick = myAlert;
+    const check = document.getElementById("check");
+    check.onchange = setNewStyle;
 }
