@@ -1,0 +1,14 @@
+html 
+    link(rel="stylesheet", href="/static/css/dict.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(src='static/js/dict.js')
+body 
+    div.header
+        h1.
+            WAP Online Dictionary 
+    div.text
+        h2  
+            p Term:
+                input(type="text", id = "word", name="word")
+                input(type="submit", value="Search", id="submit")
+    div.content

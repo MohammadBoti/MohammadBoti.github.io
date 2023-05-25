@@ -1,0 +1,15 @@
+body{
+    background-color: lightcyan;
+    margin:0;
+}
+.header{
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+.text{
+    background-color: #eeeeee;
+    padding : 5px;
+}
+p {
+    padding-left: 10px;
+}

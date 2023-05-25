@@ -1,0 +1,2 @@
+config = { host="localhost", user="wapuser", password=jukDR@#13", database="entries"}
+port = 8080;
