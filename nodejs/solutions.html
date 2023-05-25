@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width: 50%; margin: 0 auto; text-align: center;">
+    <h1>Answer to Assignemetns</h1>
+
+    <h2>Exersice N1 : Code helloWorld.js</h2>
+    <code style="text-align: left;">
+        <pre>
+            var http = require('http');
+            http.createServer(function(req, res){
+                res.writeHead(200, {
+                    "Content-type" : "text/html"
+                })
+                res.end('Hello World!');
+            }).listen(8080);  
+            </pre>
+            
+    </code>
+    <img src="./N1/n1.jpeg" style ="width: 500; height: 500px; border: 1px solid gray;" alt="">
+
+    <h2>Exersice N2 : Code myModule.js</h2>
+    <code style="text-align: left;">
+        <pre>
+            function myDate () {
+                return Date();
+            }
+            exports.myDate = myDate;
+            </pre>
+    </code>
+    <h2>Exersice N2 : Code N2.js</h2>
+    <code style="text-align: left;">
+        <pre>
+            var http = require('http');
+            var dt = require('./myModule');
+
+            http.createServer(function(req, res) {
+                res.writeHead(200, {
+                    "Content-type":"text/html"
+                });
+                res.write("The date and time are currently : " + dt.myDate());
+                res.end();
+            }).listen(8080);
+            </pre>
+    </code>
+    
+    <img src="./N2/N2.png" style ="width: 500; height: 500px; border: 1px solid gray;" alt="">
+
+    <h2>Exersice N3 : Code N3.js</h2>
+    <code style="text-align: left;">
+        <pre>
+            var http = require('http');
+
+            http.createServer(function(req, res) {
+            
+                res.writeHead(200, {"Content-type" : "text/html"});
+                res.write(req.url);
+                res.end();
+            }).listen(8080);
+            </pre>
+    </code>
+    
+    <img src="./N3/n3_1.png" style ="width: 500; height: 200px; border: 1px solid gray;" alt="">
+    <img src="./N3/n3_2.png" style ="width: 500; height: 200px; border: 1px solid gray;" alt="">
+    <img src="./N3/n3_3.png" style ="width: 500; height: 200px; border: 1px solid gray;" alt="">
+
+
+
+    <h2>Exersice N4 : Code AdderWebServer.js</h2>
+    <code style="text-align: left;">
+        <pre>
+var http = require('http');
+    var url = require('url');
+    var fs = require('fs');
+    var addmod = require('./addmod');
+
+    http.createServer(function(req, res){
+        var q = url.parse(req.url, true);
+        var fileName = "." + q.pathname; 
+    // console.log(q.pathname);
+        if (q.pathname == "/add.js") {
+            addmod.add(req, res, q.query);
+        }
+            
+        else 
+            fs.readFile(fileName, function(err, data) {
+                if (err) {
+                    res.writeHead(404, {'Content-type' : 'text/html'});
+                    return res.end("404 NOT FOUND");
+                }
+                res.writeHead(200);
+                res.write(data);
+                return res.end();
+            })
+    }).listen(8080);
+            </pre>
+    </code>
+    
+
+    <h2>Exersice N4 : Code AdderWebServer.js</h2>
+
+    <img src="./N4/Screen Shot 2022-01-27 at 11.13.45 AM.png" style ="width: 500px; height: 400px; border: 1px solid gray;" alt=""><br>
+    
+    <img src="./N4/N4_1.png" style ="width: 500px; height: 200px; border: 1px solid gray;" alt="">
+    <img src="./N4/N4_2.png" style ="width: 500px; height: 200px; border: 1px solid gray;" alt="">
+    <img src="./N4/N4_3.png" style ="width: 500px; height: 200px; border: 1px solid gray;" alt="">
+
+
+
+</body>
+</html>
